@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root{
+  --brand: #ff6b6b;
+  --open: #16a34a;
+  --in_progress: #f59e0b;
+  --closed: #6b7280;
+}
+
+/* utility colors for status */
+.text-open { color: var(--open); }
+.bg-open\/10 { background-color: rgba(22,163,74,0.08); }
+.text-in_progress { color: var(--in_progress); }
+.bg-in_progress\/10 { background-color: rgba(245,158,11,0.08); }
+.text-closed { color: var(--closed); }
+.bg-closed\/10 { background-color: rgba(107,114,128,0.06); }
+
+/* small global helpers */
+.container { max-width: 1440px; margin-left: auto; margin-right: auto; }
+.bg-brand { background-color: var(--brand); }
+.text-brand { color: var(--brand); }
+
+/* ensure focus visible */
+:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,107,107,0.12); border-radius: 6px; }
